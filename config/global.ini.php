@@ -592,7 +592,7 @@ enable_fingerprinting_across_websites = 0
 ; Piwik uses first party cookies by default. If set to 1,
 ; the visit ID cookie will be set on the Piwik server domain as well
 ; this is useful when you want to do cross websites analysis
-use_third_party_id_cookie = 0
+use_third_party_id_cookie = 1
 
 ; If tracking does not work for you or you are stuck finding an issue, you might want to enable the tracker debug mode.
 ; Once enabled (set to 1) messages will be logged to all loggers defined in "[log] log_writers" config.
@@ -607,7 +607,7 @@ debug_on_demand = 0
 ; This setting is described in this FAQ: http://piwik.org/faq/how-to/faq_175/
 ; Note: generally this should only be set to 1 in an intranet setting, where most users have the same configuration (browsers, OS)
 ; and the same IP. If left to 0 in this setting, all visitors will be counted as one single visitor.
-trust_visitors_cookies = 0
+trust_visitors_cookies = 1
 
 ; name of the cookie used to store the visitor information
 ; This is used only if use_third_party_id_cookie = 1

@@ -5695,8 +5695,8 @@ if (typeof window.Piwik !== 'object') {
                 if(!isDefined(userId) || !userId.length) {
                     return;
                 }
-                configUserId = userId;
-                visitorUUID = hash(configUserId).substr(0, 16);
+                var visitorInfo = loadVisitorIdCookie();
+                visitorUUID = visitorInfo[1];
             };
 
             /**
